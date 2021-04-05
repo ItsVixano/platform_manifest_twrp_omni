@@ -7,9 +7,13 @@
     <remote name="ItsVixano"
             fetch="https://github.com/ItsVixano" />
 
-<!-- TWRP lives in TeamWin android-9.0 (not AOSP!) -->
+    <remote name="Kud"
+            fetch="https://github.com/KudProject" />
+
+<!-- Stuffs we fetch externally -->
     <remove-project name="platform/bootable/recovery"/>
     <project path="bootable/recovery" name="android_bootable_recovery" remote="ItsVixano" revision="android-9.0"/>
+    <project path="external/f2fs-tools" name="external_f2fs-tools" remote="Kud" revision="pie" />
 
 <!-- Include external Magisk repo for repack binaries -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-9.0" />
