@@ -12,8 +12,12 @@
 
 <!-- Stuffs we fetch externally -->
     <remove-project name="platform/bootable/recovery"/>
+    <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
     <project path="bootable/recovery" name="android_bootable_recovery" remote="ItsVixano" revision="android-9.0"/>
     <project path="external/f2fs-tools" name="external_f2fs-tools" remote="Kud" revision="pie" />
+    <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aarch64-linux-android-4.9" clone-depth="1" remote="kud" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" clone-depth="1" remote="kud" revision="master" />
 
 <!-- Include external Magisk repo for repack binaries -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-9.0" />
@@ -21,4 +25,3 @@
 <!-- Include TeamWin android_system_update_engine to build a good update_engine_sideload -->
     <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-9.0" />
 </manifest>
-
