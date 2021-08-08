@@ -10,7 +10,13 @@
     <remote name="Kud"
             fetch="https://github.com/KudProject" />
 
+    <remote name="LineageOS"
+          fetch="https://github.com/LineageOS" />
+
     <!-- Remove -->
+    <remove-project name="android_external_nano"/>
+    <remove-project name="android_external_libncurses"/>
+    <remove-project name="android_external_openssh"/>
     <remove-project name="platform/bootable/recovery"/>
     <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
@@ -20,6 +26,9 @@
 
     <!-- External -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-9.0" />
+    <project path="external/nano" name="android_external_nano" remote="LineageOS" revision="lineage-18.1" />
+    <project path="external/libncurses" name="android_external_libncurses" remote="LineageOS" revision="lineage-18.1" />
+    <project path="external/openssh" name="android_external_openssh" remote="LineageOS" revision="lineage-16.0" />
     <project path="external/f2fs-tools" name="external_f2fs-tools" remote="Kud" revision="pie" />
 
     <!-- System -->
